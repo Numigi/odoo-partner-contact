@@ -6,8 +6,6 @@
 Partner first name and last name
 ================================
 
-This module was written to extend the functionality of contacts to support
-having separate last name and first name.
 
 Configuration
 =============
@@ -31,19 +29,7 @@ These methods can be overridden to change the format specified above.
 Usage
 =====
 
-The field *name* becomes a stored function field concatenating the *last name*
-and the *first name*. This avoids breaking compatibility with other modules.
 
-Users should fulfill manually the separate fields for *last name* and *first
-name*, but in case you edit just the *name* field in some unexpected module,
-there is an inverse function that tries to split that automatically. It assumes
-that you write the *name* in format configured (*"Lastname Firstname"*, by default),
-but it could lead to wrong splitting (because it's just blindly trying to
-guess what you meant), so you better specify it manually.
-
-For the same reason, after installing, previous names for contacts will stay in
-the *name* field, and the first time you edit any of them you will be asked to
-supply the *last name* and *first name* (just once per contact).
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
    :alt: Try me on Runbot
@@ -57,9 +43,7 @@ For further information, please visit:
 Known issues / Roadmap
 ======================
 
-Patterns for the inverse function are configurable only at system level. Maybe
-this configuration could depend on partner language, country or company,
-as discussed at `this OCA issue <https://github.com/OCA/partner-contact/issues/210>`_
+
 
 
 Bug Tracker
@@ -76,23 +60,7 @@ Credits
 Contributors
 ------------
 
-* Nicolas Bessi <nicolas.bessi@camptocamp.com>
-* Yannick Vaucher <yannick.vaucher@camptocamp.com>
-* Vincent Renaville <vincent.renaville@camptocamp.com>
-* Guewen Baconnier <guewen.baconnier@camptocamp.com>
-* Holger Brunn <hbrunn@terp.nl>
-* Jonathan Nemry <jonathan.nemry@acsone.eu>
-* Olivier Laurent <olivier.laurent@acsone.eu>
-* Sandy Carter <sandy.carter@savoirfairelinux.com>
-* Alexis de Lattre <alexis.delattre@akretion.fr>
-* Lorenzo Battistini <lorenzo.battistini@agilebg.com>
-* Hans Henrik Gabelgaard <hhg@gabelgaard.org>
-* Jairo Llopis <j.llopis@grupoesoc.es>
-* Adrien Peiffer <adrien.peiffer@acsone.eu>
-* Ronald Portier <ronald@therp.nl>
-* Sylvain Van Hoof
-* Pedro Baeza <pedro.baeza@serviciosbaeza.com>
-* Dave Lasley <dave@laslabs.com>
+
 
 Translations
 ------------

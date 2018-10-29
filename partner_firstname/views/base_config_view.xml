@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- © 2015 Antiun Ingenieria S.L. - Antonio Espinosa
+<!-- Copyright 2015 Antiun Ingenieria S.L. - Antonio Espinosa
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
 <odoo>
 
@@ -23,7 +23,7 @@
                                     icon="fa-play"
                                     type="object"
                                     help="Recalculate names for all partners. This process could take so much time if there are more than 10,000 active partners"
-                                    attrs="{'invisible': [('partner_names_order_changed', '=', False)]}"/>
+                                    attrs="{'invisible': [('partner_names_order_changed', '=', True)]}"/>
                         </div>
                     </div>
                 </div>
